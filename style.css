@@ -1,1 +1,98 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Comic Sans MS, sans-serif;
+}
 
+.container {
+    width: 100%;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    color: #333;
+}
+
+.section {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    background-color: lightgrey;
+    color: black;
+}
+
+.section1 {
+    background-color: lightgrey;
+}
+
+.section2 {
+    background-color: lightgrey;
+}
+
+.section3 {
+    background-color: lightgrey;
+}
+
+.section-title {
+    position: absolute;
+    top: -16px;
+    right: -1px;
+    padding: 5px;
+    border: 1px solid black;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.section1 .section-title {
+    background-color: pink;
+    color: white;
+}
+
+.section2 .section-title {
+    background-color: red;
+    color: white;
+}
+
+.section3 .section-title {
+    background-color: yellow;
+    color: white;
+}
+
+@media (min-width: 992px) {
+    .section {
+        float: left;
+        width: 30%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .section {
+        width: 45%;
+        float: left;
+    }
+
+    .section2 {
+        clear: left;
+    }
+
+    .section3 {
+        width: 95%;
+        clear: left;
+    }
+}
+
+@media (max-width: 767px) {
+    .section {
+        width: 95%;
+        margin: 10px auto;
+        float: none;
+    }
+}
